@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/main.css?123" />
+<title>测试我的搞机水平</title>
+</head>
+
+<body>
+
+<div id="slide">
+    <h3 class="logo"></h3>
+    <ul id="slide_ul" class="slide cf">
+      <li>
+        <div class="homeimg"><img src="images/home.png"></div>
+        <div class="btn btn-start"><span>马上开搞</span></div>
+      </li>
+
+      <!--第一个问题-->
+      <li>
+        <h1><img src="images/problem1.png" alt="以下哪个是蹲坑必备？"/></h1>
+        <div class="answer">
+          <label class="c-a" data-add="11" data-sel="1">纸<input type="radio" name="answer1"></label>
+          <label class="c-b" data-add="20" data-sel="2" data-result="0">手机<input type="radio" name="answer1"></label>
+          <label class="c-c" data-add="10" data-sel="3">便当<input type="radio" name="answer1"></label>
+        </div>
+        <div class="btn btn-next"><span>下一题</span></div>
+      </li>
+      <!--第一个问题end-->
+
+      <!--第2个问题-->
+      <li>
+        <h1><img src="images/problem2.png" alt="睡觉前你喜欢做什么？"/></h1>
+        <div class="answer">
+          <label class="c-a" data-add="20" data-sel="4" data-result="1">玩手机<input type="radio" name="answer2"></label>
+          <label class="c-b" data-add="11" data-sel="5">运动<input type="radio" name="answer2"></label>
+          <label class="c-c" data-add="10" data-sel="6">思考人生<input type="radio" name="answer2"></label>
+        </div>
+        <div class="btn btn-next"><span>下一题</span></div>
+      </li>
+      <!--第2个问题end-->
+
+      <!--第3个问题-->
+      <li>
+        <h1><img src="images/problem3.png" alt="上学时，老师夺走过你的什么？"/></h1>
+        <div class="answer">
+          <label class="c-a" data-add="11" data-sel="7">漫画书<input type="radio" name="answer3"></label>
+          <label class="c-b" data-add="30" data-sel="8" data-result="2">手机<input type="radio" name="answer3"></label>
+          <label class="c-c" data-add="10" data-sel="9">心<input type="radio" name="answer3"></label>
+        </div>
+        <div class="btn btn-next"><span>下一题</span></div>
+      </li>
+      <!--第3个问题end-->
+
+      <!--第4个问题-->
+      <li>
+        <h1><img src="images/problem4.png" alt="你经常习惯性做以下哪种动作"/></h1>
+        <div class="answer">
+          <label class="c-a" data-add="13" data-sel="10" style="text-indent:38px;font-size:16px;">反复按手机开机键<input type="radio" name="answer4"></label>
+          <label class="c-b" data-add="22" data-sel="11" style="text-indent:38px;font-size:16px;">反复解锁手机再锁上<input type="radio" name="answer4"></label>
+          <label class="c-c" data-add="16" data-sel="12" style="text-indent:38px;font-size:16px;">反复掏出手机看时间<input type="radio" name="answer4"></label>
+        </div>
+        <div class="btn btn-next"><span>下一题</span></div>
+      </li>
+      <!--第4个问题end-->
+
+      <li id="p5" class="result">
+        <p id="nickname" class="title-name"></p>
+        <div class="title-img"><img id="resultimg" src="images/home.png" /></div>
+
+
+        <h2 id="p5_h2"></h2>
+        <div id="uc" class="uc">
+          <div class="score-wrap"><img src="images/gaoji.png"><b id="score">10</b><img src="images/gaoji_fen.png"></div>
+          <div class="btn-share-last"><b id="share">分享</b></div>
+          <div class="btn-replay"><b onclick="location.reload();">再玩</b></div>
+        </div>
+
+        <div class="btn-toend"><span>UC大事件</span></div>
+      </li>
+
+
+      <li>
+        <div class="des">
+          <p>你知道每天有多少人在用UC么？</p>
+          <p>1亿人</p>
+          <p>手拉手能绕地球4.24圈</p>
+          <p>每天有1亿人打开手机浏览UC；</p>
+          <p>每天有1亿双眼睛带着UC看世界；</p>
+          <p>每天有1亿颗心脏与UC一起跳动。</p>
+          <p>这是何等幸福和幸运？感谢有你，</p>
+          <p>明天会更好！</p>
+        </div>
+        <div class="uc">
+          <div class="btn-share-last"><b id="share_uc">分享</b></div>
+          <div class="btn-replay"><b onclick="location.reload();">再玩</b></div>
+        </div>
+      </li>
+
+    </ul>
+
+    <div id="mask" class="mask"></div>
+
+</div>
+
+
+<script type="text/javascript">
+    var _paq = _paq || [];
+    (function(){
+        var u="http://track.uc.cn:9080/";
+        _paq.push(['setSiteId', '04a003a31a0c']);
+        _paq.push(['setDocumentTitle',  'test']);
+        _paq.push(['setTrackerUrl', u+'collect?uc_param_str=dnfrcpve']);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.defer=true; g.async=true;
+        g.src=u+'uaest.js';
+        s.parentNode.insertBefore(g,s);
+    })();
+</script>
+
+<script type="text/javascript">
+setTimeout(function(){
+  window.scrollTo(0, 1);
+},10);
+//UC浏览器分享
+var ua = navigator.userAgent;
+var share = document.getElementById("share");
+var share_uc = document.getElementById("share_uc");
+var mask = document.getElementById("mask");
+var nicknames = ['无手机不蹲坑者','深夜砸脸鬼','“埋头苦干”族','手机伴（dan）侣（shen）狗'];
+//微信分享
+var imgUrl = "http://image.uc.cn/s/uae/g/01/100million/images/like.png";
+var link = "http://image.uc.cn/s/uae/g/01/100million/main.html";
+var descContent = '我是手机伴（dan）侣（shen）狗，你是什么？去UC浏览器测试下吧。';
+var shareTitle = "#UC浏览器日活过亿#";
+
+function browser(){
+  if(ua.match(/UCBrowser/)){
+    if(ua.match(/iPhone/i) == 'iPhone'){
+      share.onclick = share_uc.onclick = myFunction_ios;
+    }else{
+      share.onclick = share_uc.onclick = myFunction;
+    }
+  }else{
+    share.onclick = share_uc.onclick = function(){
+      mask.style.display = 'block';
+    };
+  }
+}
+
+mask.onclick = function(){
+  mask.style.display = 'none';
+};
+
+function myFunction(){
+  var UCBrowserText=ucweb.startRequest("shell.page_share", [shareTitle, descContent, link, '', 'invisible:SinaWeibo,QQWeibo']);
+  _paq.push(['setCustomVariable', 3, "shareUC", "adroid",  "page"]);
+  _paq.push(['trackEvent', 'shareUC', 'clicked' , 'adroid']);
+}
+function myFunction_ios() {
+  ucbrowser.web_share(shareTitle, descContent, link, '', '', '', 'china');
+  _paq.push(['setCustomVariable', 3, "shareUC", "iphone",  "page"]);
+  _paq.push(['trackEvent', 'shareUC', 'clicked' , 'iphone']);
+}
+browser();
+
+</script>
+
+<script type="text/javascript" src="js/slide.js?123"></script>
+
+</body>
+</html>
